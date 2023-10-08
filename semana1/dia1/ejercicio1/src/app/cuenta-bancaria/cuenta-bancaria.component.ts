@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CuentaBancaria } from './CuentaBancaria';
+import { CuentaBancaria } from './cuenta-bancaria';
 
 @Component({
   selector: 'app-cuenta-bancaria',
