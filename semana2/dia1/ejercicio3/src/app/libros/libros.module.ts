@@ -16,6 +16,9 @@ import { EditarComponent } from './editar/editar.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    ConsultarComponent
   ]
 })
 export class LibrosModule { }

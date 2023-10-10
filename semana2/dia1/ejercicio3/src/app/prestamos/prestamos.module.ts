@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { PrestamosComponent } from './prestamos/prestamos.component';
 import { SolicitarComponent } from './solicitar/solicitar.component';
 import { DevolucionComponent } from './devolucion/devolucion.component';
+import { LibrosModule } from '../libros/libros.module';
 
 
 
@@ -13,7 +14,11 @@ import { DevolucionComponent } from './devolucion/devolucion.component';
     DevolucionComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    LibrosModule
+  ],
+  exports: [
+    PrestamosComponent
   ]
 })
 export class PrestamosModule { }
