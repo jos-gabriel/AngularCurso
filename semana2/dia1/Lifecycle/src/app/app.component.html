@@ -1,0 +1,7 @@
+<h1>{{title}}</h1>
+
+
+<app-child [parentData]="data"></app-child>
+<input type="text" name="test" id="test" placeholder="test" [(ngModel)]="parentData" />
+{{parentData}}
+<app-child [parentData]="parentData"></app-child>
