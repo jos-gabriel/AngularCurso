@@ -3,8 +3,7 @@ import { Selector } from 'src/models/selector';
 
 @Component({
   selector: 'app-selector-color',
-  templateUrl: './selector-color.component.html',
-  styleUrls: ['./selector-color.component.css'],
+  templateUrl: './selector-color.component.html'
 })
 export class SelectorColorComponent {
   colorPorOmision: string = '#6553C1';
