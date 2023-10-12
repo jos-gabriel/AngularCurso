@@ -4,6 +4,7 @@ import { PrestamosComponent } from './prestamos/prestamos.component';
 import { SolicitarComponent } from './solicitar/solicitar.component';
 import { DevolucionComponent } from './devolucion/devolucion.component';
 import { LibrosModule } from '../libros/libros.module';
+import { PrestamosRoutingModule } from './prestamos-routing.module';
 
 
 
@@ -15,7 +16,8 @@ import { LibrosModule } from '../libros/libros.module';
   ],
   imports: [
     CommonModule,
-    LibrosModule
+    LibrosModule,
+    PrestamosRoutingModule
   ],
   exports: [
     PrestamosComponent
