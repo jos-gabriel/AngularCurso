@@ -1,3 +1,41 @@
-<h1>Ejercicio3</h1>
-<hr>
-<app-prestamos></app-prestamos>
+<nav class="navbar navbar-expand-sm bg-light">
+  <ul class="navbar-nav">
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" id="authDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Auth
+      </a>
+      <div class="dropdown-menu" aria-labelledby="authDropdown">
+        <a class="dropdown-item" href="/auth/">Auth</a>
+        <a class="dropdown-item" href="/auth/forgot-password">Forgot password</a>
+        <a class="dropdown-item" href="/auth/login">Login</a>
+        <a class="dropdown-item" href="/auth/sign-up">Sign Up</a>
+      </div>
+    </li>
+
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" id="librosDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Libros
+      </a>
+      <div class="dropdown-menu" aria-labelledby="librosDropdown">
+        <a class="dropdown-item" href="/libros/">Libros</a>
+        <a class="dropdown-item" href="/libros/consultar">Consultar</a>
+        <a class="dropdown-item" href="/libros/registrar">Registrar</a>
+        <a class="dropdown-item" href="/libros/editar">Editar</a>
+      </div>
+    </li>
+
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" id="prestamosDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Préstamos
+      </a>
+      <div class="dropdown-menu" aria-labelledby="prestamosDropdown">
+        <a class="dropdown-item" href="/prestamos/">Préstamos</a>
+        <a class="dropdown-item" href="/prestamos/devolucion">Devolución</a>
+        <a class="dropdown-item" href="/prestamos/solicitar">Solicitar</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+
+
+<router-outlet></router-outlet>
