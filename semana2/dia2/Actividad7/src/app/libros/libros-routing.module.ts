@@ -5,18 +5,12 @@ import { ConsultarComponent } from './consultar/consultar.component';
 import { RegistrarComponent } from './registrar/registrar.component';
 import { EditarComponent } from './editar/editar.component';
 
-const routes: Routes = [{
-
-  path:'',
-  component: AdminLibrosComponent,
-
-  children: [
-    {path: 'consultar', component: ConsultarComponent},
-    {path: 'registrar', component: RegistrarComponent},
-    {path: 'editar', component: EditarComponent}
-  ]
-
-}];
+const routes: Routes = [
+  { path: 'libros', component: AdminLibrosComponent },
+  { path: 'libros/consultar', component: ConsultarComponent },
+  { path: 'libros/registrar', component: RegistrarComponent },
+  { path: 'libros/editar', component: EditarComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
