@@ -5,12 +5,19 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { CommonModule } from '@angular/common';
+import { authGuard } from './guards/auth.guard';
+import { userResolver } from './guards/user.resolver';
 
 const routes: Routes = [
   { path: 'auth/login', component: LoginComponent },
   { path: 'auth/forgot-password', component: ForgotPasswordComponent },
   { path: 'auth/sign-up', component: SignUpComponent },
-  { path: 'auth', component: AuthComponent },
+  {
+    path: 'auth',
+    component: AuthComponent,
+    canActivate: [authGuard],
+    resolve: {auth: userResolver}
+  },
 ];
 
 @NgModule({
