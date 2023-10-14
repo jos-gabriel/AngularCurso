@@ -1,1 +1,17 @@
-<p>editar works!</p>
+<div class="container">
+  <div *ngIf="libro" class="card bg-light mb-3" style="max-width: 25rem;">
+    <h2 class="card-header">Editar Libro</h2>
+    <div class="card-body">
+      <p><strong>ISBN:</strong> {{ libro.ISBN }}</p>
+      <p><strong>Título:</strong> {{ libro.titulo }}</p>
+      <p><strong>Autor:</strong> {{ libro.autor }}</p>
+      <p><strong>Editorial:</strong> {{ libro.editorial }}</p>
+      <p><strong>Fecha de publicación:</strong> {{ libro.fechaPublicacion }}</p>
+      <p><strong>Número de ejemplares:</strong> {{ libro.numeroEjemplares }}</p>
+      <p><strong>Tomos disponibles:</strong> {{ libro.disponibles }}</p>
+    </div>
+    <div class="card-footer">
+      <button type="button" class="btn btn-primary" routerLink="/libros/consultar">Consultar</button>
+    </div>
+  </div>
+</div>

@@ -1,19 +1,35 @@
-<p>consultar works!</p>
-
-<h2>Componente 2</h2>
-<h3>Mostrar libro</h3>
-
-<button (click)="mostrarInformacion = !mostrarInformacion">
-  Mostrar/Ocultar título
-</button>
-
-<div [ngClass]="{ 'hidden': !mostrarInformacion }">
-  <h2>Libro</h2>
-  <p><strong>ISBN:</strong> {{ libro.ISBN }}</p>
-  <p><strong>Titulo:</strong> {{ libro.titulo }}</p>
-  <p><strong>Autor:</strong> {{ libro.autor }}</p>
-  <p><strong>Editorial:</strong> {{ libro.editorial }}</p>
-  <p><strong>Fecha de publicación:</strong> {{ libro.fechaPublicacion }}</p>
-  <p><strong>Numero de ejemplares:</strong> {{ libro.numeroEjemplares }}</p>
-  <p><strong>Tomos disponibles:</strong> {{ libro.disponibles }}</p>
+<div class="container">
+  <h2>Libros</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">ISBN</th>
+        <th scope="col">Título</th>
+        <th scope="col">Autor</th>
+        <th scope="col">Editorial</th>
+        <th scope="col">Fecha de Publicación</th>
+        <th scope="col">Número de Ejemplares</th>
+        <th scope="col">Disponibles</th>
+        <th scope="col">Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let libro of libros">
+        <td>{{ libro.id }}</td>
+        <td>{{ libro.ISBN }}</td>
+        <td>{{ libro.titulo }}</td>
+        <td>{{ libro.autor }}</td>
+        <td>{{ libro.editorial }}</td>
+        <td>{{ libro.fechaPublicacion }}</td>
+        <td>{{ libro.numeroEjemplares }}</td>
+        <td>{{ libro.disponibles }}</td>
+        <td>
+          <button type="button" class="btn btn-success" (click)="editarLibro(libro.id)">
+            Editar
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
