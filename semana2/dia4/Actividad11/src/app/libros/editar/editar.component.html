@@ -1,14 +1,38 @@
 <div class="container">
-  <div *ngIf="libro" class="card bg-light mb-3" style="max-width: 25rem;">
+  <div *ngIf="libro" class="card bg-light mb-3 mt-3 mx-auto" style="max-width: 25rem;">
     <h2 class="card-header">Editar Libro</h2>
     <div class="card-body">
-      <p><strong>ISBN:</strong> {{ libro.ISBN }}</p>
-      <p><strong>Título:</strong> {{ libro.titulo }}</p>
-      <p><strong>Autor:</strong> {{ libro.autor }}</p>
-      <p><strong>Editorial:</strong> {{ libro.editorial }}</p>
-      <p><strong>Fecha de publicación:</strong> {{ libro.fechaPublicacion }}</p>
-      <p><strong>Número de ejemplares:</strong> {{ libro.numeroEjemplares }}</p>
-      <p><strong>Tomos disponibles:</strong> {{ libro.disponibles }}</p>
+      <form (ngSubmit)="guardarEdicion()">
+        <div class="form-group">
+          <label for="ISBN">ISBN:</label>
+          <input type="text" id="ISBN" [(ngModel)]="libro.ISBN" name="ISBN" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="titulo">Título:</label>
+          <input type="text" id="titulo" [(ngModel)]="libro.titulo" name="titulo" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="autor">Autor:</label>
+          <input type="text" id="autor" [(ngModel)]="libro.autor" name="autor" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="editorial">Editorial:</label>
+          <input type="text" id="editorial" [(ngModel)]="libro.editorial" name="editorial" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="fechaPublicacion">Fecha de publicación:</label>
+          <input type="text" id="fechaPublicacion" [(ngModel)]="libro.fechaPublicacion" name="fechaPublicacion" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="numeroEjemplares">Número de ejemplares:</label>
+          <input type="text" id="numeroEjemplares" [(ngModel)]="libro.numeroEjemplares" name="numeroEjemplares" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="disponibles">Tomos disponibles:</label>
+          <input type="text" id="disponibles" [(ngModel)]="libro.disponibles" name="disponibles" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-warning mt-3">Guardar Cambios</button>
+      </form>
     </div>
     <div class="card-footer">
       <button type="button" class="btn btn-primary" routerLink="/libros/consultar">Consultar</button>

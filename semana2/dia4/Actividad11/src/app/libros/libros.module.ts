@@ -5,6 +5,8 @@ import { ConsultarComponent } from './consultar/consultar.component';
 import { RegistrarComponent } from './registrar/registrar.component';
 import { EditarComponent } from './editar/editar.component';
 import { LibrosRoutingModule } from './libros-routing.module';
+import { LibrosService } from '../servicios/libros.service';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -17,10 +19,14 @@ import { LibrosRoutingModule } from './libros-routing.module';
   ],
   imports: [
     CommonModule,
-    LibrosRoutingModule
+    LibrosRoutingModule,
+    FormsModule
   ],
   exports: [
     ConsultarComponent
+  ],
+  providers: [
+    LibrosService
   ]
 })
 export class LibrosModule { }
