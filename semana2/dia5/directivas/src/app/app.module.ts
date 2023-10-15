@@ -2,10 +2,13 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { ElementHoverDirective } from './element-hover.directive';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ElementHoverDirective
   ],
   imports: [
     BrowserModule
