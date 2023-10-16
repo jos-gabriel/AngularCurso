@@ -4,6 +4,7 @@ import { BuscarComponent } from './buscar/buscar.component';
 import { AgregarComponent } from './agregar/agregar.component';
 import { EditarComponent } from './editar/editar.component';
 import { EliminarComponent } from './eliminar/eliminar.component';
+import { AgregarTextoPersonasPipe } from '../pipes/agregar-texto-personas.pipe';
 
 @NgModule({
   declarations: [
@@ -11,6 +12,7 @@ import { EliminarComponent } from './eliminar/eliminar.component';
     AgregarComponent,
     EditarComponent,
     EliminarComponent,
+    AgregarTextoPersonasPipe
   ],
   imports: [CommonModule],
 })
