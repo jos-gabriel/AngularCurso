@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
-  selector: 'app-demo-pipe',
-  templateUrl: './demo-pipe.component.html'
+  selector: 'app-lista-libros',
+  templateUrl: './lista-libros.component.html'
 })
-export class DemoPipeComponent implements OnInit {
+export class ListaLibrosComponent implements OnInit {
 
   libros: any[] = [];
 
@@ -17,4 +17,5 @@ export class DemoPipeComponent implements OnInit {
       console.log('Datos cargados:', data);
     });
   }
+
 }

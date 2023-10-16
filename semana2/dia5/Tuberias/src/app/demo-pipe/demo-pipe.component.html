@@ -1,1 +1,13 @@
-<p>demo-pipe works!</p>
+<h2>Detalles del Libro</h2>
+<ul>
+  <li>
+    <strong>(UpperCasePipe) Título:</strong> {{ libros[0]?.titulo | uppercase }} <br>
+    <strong>(LowerCasePipe) Autor:</strong> {{ libros[0]?.autor | lowercase }} <br>
+    <strong>(CurrencyPipe) Precio:</strong> {{ libros[0]?.precio | currency:'MXN':'symbol':'1.2-2' }}<br>
+    <strong>(DatePipe) Año:</strong> {{ libros[0]?.fechaPublicacion | date:'yyyy' }} <br>
+    <strong>(PercentPipe) Descuento:</strong> {{ libros[0]?.descuento | percent:'1.2-2' }}<br>
+    <strong>(SlicePipe) Título Recortado:</strong> {{ libros[0]?.titulo | slice:0:10 }} <br>
+    <strong>(DecimalPipe) Precio:</strong> {{ libros[0]?.precio | number:'1.0-0' }} <br>
+    <strong>(JsonPipe) JSON del Libro:</strong> {{ libros[0] | json }}<br>
+  </li>
+</ul>

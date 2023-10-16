@@ -1,0 +1,29 @@
+<h2>Lista de Libros</h2>
+<table border="1">
+  <thead>
+    <tr>
+      <th>ISBN</th>
+      <th>Título</th>
+      <th>Autor</th>
+      <th>Editorial</th>
+      <th>Fecha de Publicación</th>
+      <th>Número de Ejemplares</th>
+      <th>Disponibles</th>
+      <th>Precio MXN</th>
+      <th>Descuento</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let libro of libros">
+      <td>{{ libro.ISBN }}</td>
+      <td>{{ libro.titulo }}</td>
+      <td>{{ libro.autor }}</td>
+      <td>{{ libro.editorial }}</td>
+      <td>{{ libro.fechaPublicacion }}</td>
+      <td>{{ libro.numeroEjemplares }}</td>
+      <td>{{ libro.disponibles }}</td>
+      <td>{{ libro.precio ? libro.precio : 'N/A' }}</td>
+      <td>{{ libro.descuento ? libro.descuento : 'N/A' }}</td>
+    </tr>
+  </tbody>
+</table>
