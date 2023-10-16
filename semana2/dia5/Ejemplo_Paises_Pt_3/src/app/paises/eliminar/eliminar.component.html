@@ -1,0 +1,20 @@
+<div class="mt-5 card">
+  <div class="card-header">
+    Eliminar país
+  </div>
+  <div class="card-block" *ngIf="pais">
+    <p>ID: {{pais.id}} </p>
+    <p>Bandera: {{pais.bandera}} </p>
+    <p>Nombre: {{pais.nombre}}</p>
+    <p>Capital: {{pais.capital}}</p>
+    <p>Poblacion: {{pais.poblacion}}</p>
+  </div>
+</div>
+<div class="mt-5">
+  <button type="button" class="btn btn-outline-primary" (click)="eliminarPais()">
+    Eliminar
+  </button>
+  <button type="button" class="btn btn-outline-primary" (click)="regresar()">
+    Regresar
+  </button>
+</div>

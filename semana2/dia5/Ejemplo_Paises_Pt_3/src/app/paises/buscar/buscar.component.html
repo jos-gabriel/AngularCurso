@@ -1,0 +1,50 @@
+<div class="mt-5 card">
+  <div class="card-header">Buscar país</div>
+  <div class="card-block">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">País</th>
+          <th scope="col">Capital</th>
+          <th scope="col">Población</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let pais of paises">
+          <th scope="row">{{ pais.id }}</th>
+          <td>
+            <img
+              [src]="
+                'https://upload.wikimedia.org/wikipedia/commons/' + pais.bandera
+              "
+              class="mr-2"
+              style="width: 20px"
+            />
+            {{ pais.nombre }}
+          </td>
+          <td>{{ pais.capital }}</td>
+          <td>{{ pais.poblacion | number }}</td>
+          <td>
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              (click)="editar(pais.id)"
+            >
+              Editar
+            </button>
+          </td>
+          <td>
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              (click)="eliminar(pais.id)"
+            >
+              Eliminar
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
