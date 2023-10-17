@@ -1,0 +1,326 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "username": "johndoe",
+      "email": "johndoe@example.com",
+      "phone": "123-456-7890",
+      "website": "johndoe.com",
+      "address": {
+        "street": "123 Main Street",
+        "suite": "Apt 4B",
+        "city": "Cityville",
+        "zipcode": "12345",
+        "geo": {
+          "lat": "12.3456",
+          "lng": "78.9012"
+        }
+      },
+      "company": {
+        "name": "Tech Solutions Inc.",
+        "catchPhrase": "Innovate. Create. Succeed.",
+        "bs": "Software Development"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Alice Smith",
+      "username": "alicesmith",
+      "email": "alice@example.com",
+      "phone": "987-654-3210",
+      "website": "alicesmith.com",
+      "address": {
+        "street": "456 Elm Street",
+        "suite": "Unit 2C",
+        "city": "Townsville",
+        "zipcode": "54321",
+        "geo": {
+          "lat": "45.6789",
+          "lng": "32.1098"
+        }
+      },
+      "company": {
+        "name": "Design Studio Ltd.",
+        "catchPhrase": "Creativity Unleashed",
+        "bs": "Graphic Design"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Elsa Johnson",
+      "username": "elsaj",
+      "email": "elsa.j@example.com",
+      "phone": "555-123-4567",
+      "website": "elsajohnson.net",
+      "address": {
+        "street": "789 Oak Avenue",
+        "suite": "Suite 5D",
+        "city": "Villagetown",
+        "zipcode": "98765",
+        "geo": {
+          "lat": "78.1234",
+          "lng": "65.9876"
+        }
+      },
+      "company": {
+        "name": "HealthTech Innovations",
+        "catchPhrase": "Wellness Redefined",
+        "bs": "Healthcare Technology"
+      }
+    },
+    {
+      "id": 4,
+      "name": "David Brown",
+      "username": "dbrown",
+      "email": "david@example.com",
+      "phone": "333-555-7777",
+      "website": "davidbrown.org",
+      "address": {
+        "street": "567 Pine Road",
+        "suite": "Apt 3A",
+        "city": "Forestville",
+        "zipcode": "76543",
+        "geo": {
+          "lat": "56.7890",
+          "lng": "77.1234"
+        }
+      },
+      "company": {
+        "name": "Financial Services Inc.",
+        "catchPhrase": "Secure Your Future",
+        "bs": "Financial Planning"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Sophie Wilson",
+      "username": "sophiew",
+      "email": "sophie@example.com",
+      "phone": "222-888-9999",
+      "website": "sophiewilson.com",
+      "address": {
+        "street": "101 Sunset Boulevard",
+        "suite": "Unit 6E",
+        "city": "Beachside",
+        "zipcode": "54321",
+        "geo": {
+          "lat": "10.1111",
+          "lng": "88.9999"
+        }
+      },
+      "company": {
+        "name": "Beachwear Boutique",
+        "catchPhrase": "Embrace the Sun",
+        "bs": "Fashion Retail"
+      }
+    },
+    {
+      "name": "",
+      "username": "",
+      "email": "",
+      "phone": "",
+      "website": "",
+      "address": {
+        "street": "",
+        "suite": "",
+        "city": "",
+        "zipcode": "",
+        "geo": {
+          "lat": "",
+          "lng": ""
+        }
+      },
+      "company": {
+        "name": "",
+        "catchPhrase": "",
+        "bs": ""
+      },
+      "id": 6
+    },
+    {
+      "name": "",
+      "username": "",
+      "email": "",
+      "phone": "",
+      "website": "",
+      "address": {
+        "street": "",
+        "suite": "",
+        "city": "",
+        "zipcode": "",
+        "geo": {
+          "lat": "",
+          "lng": ""
+        }
+      },
+      "company": {
+        "name": "",
+        "catchPhrase": "",
+        "bs": ""
+      },
+      "id": 7
+    },
+    {
+      "name": null,
+      "username": null,
+      "email": null,
+      "phone": null,
+      "website": null,
+      "address": {
+        "street": null,
+        "suite": null,
+        "city": null,
+        "zipcode": null,
+        "geo": {
+          "lat": null,
+          "lng": null
+        }
+      },
+      "company": {
+        "name": null,
+        "catchPhrase": null,
+        "bs": null
+      },
+      "id": 8
+    },
+    {
+      "name": null,
+      "username": null,
+      "email": null,
+      "phone": null,
+      "website": null,
+      "address": {
+        "street": null,
+        "suite": null,
+        "city": null,
+        "zipcode": null,
+        "geo": {
+          "lat": null,
+          "lng": null
+        }
+      },
+      "company": {
+        "name": null,
+        "catchPhrase": null,
+        "bs": null
+      },
+      "id": 9
+    },
+    {
+      "name": "jos",
+      "username": "josgabro",
+      "email": "jos@",
+      "phone": "555",
+      "website": ".linkin",
+      "address": {
+        "street": "atlacomu",
+        "suite": "djk",
+        "city": "mexico",
+        "zipcode": "540170",
+        "geo": {
+          "lat": "",
+          "lng": ""
+        }
+      },
+      "company": {
+        "name": "softtek",
+        "catchPhrase": "holoa mundo ",
+        "bs": "jodjosod"
+      },
+      "id": 10
+    },
+    {
+      "name": "gabo",
+      "username": "gabro_pb",
+      "email": "jos.gabriel.bas@gmail.com",
+      "phone": "555",
+      "website": "linkin",
+      "address": {
+        "street": "jos",
+        "suite": "jodj",
+        "city": "jkjk",
+        "zipcode": "jkj",
+        "geo": {
+          "lat": "jkkj",
+          "lng": "jkj"
+        }
+      },
+      "company": {
+        "name": "jkjk",
+        "catchPhrase": "kjkj",
+        "bs": "jkj"
+      },
+      "id": 11
+    },
+    {
+      "name": "lkjlkjslkjdklj",
+      "username": "kjdlksjlkdjkldjklsjk",
+      "email": "sjdlksdjlkdsjdslkj",
+      "phone": "kjldksjdlksjdslkjdslk",
+      "website": "lkjdlkjsdkjdslksdj",
+      "address": {
+        "street": "jdslkjdslksjdklj",
+        "suite": "kjdlkjsdlkdjslsdjk",
+        "city": "jsdjdsojosjqoi",
+        "zipcode": "|jdoskjoidsjsdojo",
+        "geo": {
+          "lat": "jidjoisdjoisdjo",
+          "lng": "jdoisjsodijsdoij"
+        }
+      },
+      "company": {
+        "name": "oijdsoijdosij",
+        "catchPhrase": "ojdoisdjoidsj",
+        "bs": "ojdoijjosd"
+      },
+      "id": 12
+    },
+    {
+      "name": "jljlkkjklsdjkl",
+      "username": "jklsdjdlksjdsflkj",
+      "email": "kljlsdkjdsflksjfdlk",
+      "phone": "kdlksjsfdlksdfj",
+      "website": "kjdlksjfsdlksdfjl",
+      "address": {
+        "street": "jlkdsjdlskjfsdlkj",
+        "suite": "sjdlkdsfjsldkjl",
+        "city": "jdlksdjlkfjsldkj",
+        "zipcode": "jdslkjfslkdjflk",
+        "geo": {
+          "lat": "kjdfslkdfjlskdj",
+          "lng": "jfdslkdjlskdj"
+        }
+      },
+      "company": {
+        "name": "jfdslkfdjslkdjl",
+        "catchPhrase": "jfdslkjfsdlkdj",
+        "bs": "fjdslkdjfdslkjPPURIEUIUEIUR"
+      },
+      "id": 13
+    },
+    {
+      "name": "jdoueiu",
+      "username": "kjdlkjaslkjdñ",
+      "email": "kdskljdaksdjl",
+      "phone": "jljjsdlkjsdlkj",
+      "website": "kljsdlksjdklsdjkl",
+      "address": {
+        "street": "jdslkjdskljsdlkj",
+        "suite": "kljdslksjdklsdjl",
+        "city": "kjklsdjlksdjkl",
+        "zipcode": "lkjdkljsdkljkld",
+        "geo": {
+          "lat": "1545457",
+          "lng": "46576575s"
+        }
+      },
+      "company": {
+        "name": "klsjlkdjldsj",
+        "catchPhrase": "kjdlsksjkl",
+        "bs": "kljsdlkjd"
+      },
+      "id": 14
+    }
+  ]
+}

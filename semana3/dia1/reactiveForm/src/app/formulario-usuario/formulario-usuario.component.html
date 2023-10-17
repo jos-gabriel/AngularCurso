@@ -1,0 +1,56 @@
+<h2>Formulario con Reactive Forms</h2>
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+  <h4>Información personal</h4>
+  <div class="form-group">
+    <input type="text" id="name" formControlName="name" class="form-control" style="max-width: 400px;" placeholder="Name">
+  </div>
+  <div class="form-group">
+    <input type="text" id="username" formControlName="username" class="form-control" style="max-width: 400px;" placeholder="Username">
+  </div>
+  <div class="form-group">
+    <input type="email" id="email" formControlName="email" class="form-control" style="max-width: 400px;" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <input type="text" id="phone" formControlName="phone" class="form-control" style="max-width: 400px;" placeholder="Phone">
+  </div>
+  <div class="form-group">
+    <input type="text" id="website" formControlName="website" class="form-control" style="max-width: 400px;" placeholder="Website">
+  </div>
+  <h4>Dirección</h4>
+  <fieldset formGroupName="address">
+    <div class="form-group">
+      <input type="text" id="street" formControlName="street" class="form-control" style="max-width: 400px;" placeholder="Street">
+    </div>
+    <div class="form-group">
+      <input type="text" id="suite" formControlName="suite" class="form-control" style="max-width: 400px;" placeholder="Suite">
+    </div>
+    <div class="form-group">
+      <input type="text" id="city" formControlName="city" class="form-control" style="max-width: 400px;" placeholder="Ciudad">
+    </div>
+    <div class="form-group">
+      <input type="text" id="zipcode" formControlName="zipcode" class="form-control" style="max-width: 400px;" placeholder="Código Postal">
+    </div>
+    <h4>Geo</h4>
+    <fieldset formGroupName="geo">
+      <div class="form-group">
+        <input type="text" id="lat" formControlName="lat" class="form-control" style="max-width: 400px;" placeholder="Latitud">
+      </div>
+      <div class="form-group">
+        <input type="text" id="lng" formControlName="lng" class="form-control" style="max-width: 400px;" placeholder="Longitud">
+      </div>
+    </fieldset>
+  </fieldset>
+  <h4>Compañía</h4>
+  <div formGroupName="company">
+    <div class="form-group">
+      <input type="text" id="companyName" formControlName="name" class="form-control" style="max-width: 400px;" placeholder="Company Name">
+    </div>
+    <div class="form-group">
+      <input type="text" id="catchPhrase" formControlName="catchPhrase" class="form-control" style="max-width: 400px;" placeholder="Catch Phrase">
+    </div>
+    <div class="form-group">
+      <input type="text" id="bs" formControlName="bs" class="form-control" style="max-width: 400px;" placeholder="Company BS">
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary mb-4 mt-4">Guardar Usuario</button>
+</form>
