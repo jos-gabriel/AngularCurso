@@ -9,12 +9,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const productosRouting: Routes = [
-  { path: '', component: AdminComponent },
-  { path: 'admin', component: AdminComponent },
-  { path: 'agregar', component: AgregarComponent },
-  { path: 'detalles/:id', component: DetallesComponent },
-  { path: 'editar/:id', component: EditarComponent },
-  { path: 'eliminar/:id', component: EliminarComponent },
+  { path: '', component: AdminComponent, data: { breadcrumb: 'Inicio' } },
+  { path: 'admin', component: AdminComponent, data: { breadcrumb: 'Administración' } },
+  { path: 'agregar', component: AgregarComponent, data: { breadcrumb: 'Agregar Producto' } },
+  { path: 'detalles/:id', component: DetallesComponent, data: { breadcrumb: 'Detalles de Producto' } },
+  { path: 'editar/:id', component: EditarComponent, data: { breadcrumb: 'Editar Producto' } },
+  { path: 'eliminar/:id', component: EliminarComponent, data: { breadcrumb: 'Eliminar Producto' } },
 ];
 
 
@@ -24,16 +24,16 @@ const productosRouting: Routes = [
     AgregarComponent,
     DetallesComponent,
     EditarComponent,
-    EliminarComponent,    
+    EliminarComponent,
   ],
   exports:[
     RouterModule
   ],
   imports: [
-    CommonModule, 
+    CommonModule,
     RouterModule.forChild(productosRouting),
     FormsModule,
-    ReactiveFormsModule    
+    ReactiveFormsModule
   ]
 })
 export class ProductosModule { }

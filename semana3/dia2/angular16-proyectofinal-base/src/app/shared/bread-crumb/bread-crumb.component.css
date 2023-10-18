@@ -1,0 +1,30 @@
+/* Estilos para el componente de migas de pan */
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0; /* Fondo tipo barra */
+  padding: 15px 20px; /* Ajusta el relleno según tus necesidades */
+  border-radius: 20px; /* Borde redondeado para dar un aspecto de barra */
+}
+
+.breadcrumb-divider {
+  margin: 0 10px; /* Espacio entre los iconos de las migas de pan */
+}
+
+.breadcrumb-item {
+  display: inline; /* Muestra los elementos en línea */
+}
+
+.home-icon {
+  color: #9900ff; /* Color icono Home */
+}
+
+
+.breadcrumb-item a {
+  text-decoration: none; /* Quita el subrayado de los enlaces */
+  color: #007bff; /* Color de los enlaces */
+}
+
+.breadcrumb-item a:hover {
+  text-decoration: underline; /* Subrayado al pasar el ratón por los enlaces */
+}

@@ -6,6 +6,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { ProductosModule } from './productos/productos.module';
 import { AppComponent } from './app.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AppComponent } from './app.component';
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    ProductosModule   
+    ProductosModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
