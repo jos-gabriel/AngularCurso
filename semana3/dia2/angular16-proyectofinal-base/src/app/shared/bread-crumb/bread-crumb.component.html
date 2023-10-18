@@ -1,18 +1,14 @@
 <nav class="breadcrumbs p-d-flex p-ai-center">
-  <!-- Enlace a la página de inicio con el ícono de casa -->
   <a routerLink="/" class="breadcrumb-item">
     <i class="pi pi-home home-icon"></i>
   </a>
   <ng-container *ngFor="let breadcrumb of breadcrumbs; let last = last">
-    <!-- Separador visual con el ícono de ángulo derecho -->
     <span class="breadcrumb-divider">
       <i class="pi pi-angle-right"></i>
     </span>
-    <!-- Elementos de migas de pan (enlaces) -->
     <span *ngIf="!last" class="breadcrumb-item">
       <a [routerLink]="breadcrumb.url">{{ breadcrumb.label }}</a>
     </span>
-    <!-- Último elemento de migas de pan sin enlace -->
     <span *ngIf="last" class="breadcrumb-item">{{ breadcrumb.label }}</span>
   </ng-container>
 </nav>
