@@ -33,6 +33,8 @@
             <div class="button-container">
               <button pButton type="button" label="Detalles" class="custom-button" [routerLink]="['/detalles', producto.id]"></button>
               <button pButton type="button" icon="pi pi-chevron-down" class="custom-button" (click)="setSelectedProductId(producto.id, contextMenu, $event)"></button>
+            </div>
+            <div>
               <p-menu #contextMenu [model]="items" [popup]="true" [appendTo]="'body'"></p-menu>
             </div>
           </td>
